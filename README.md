@@ -6,6 +6,8 @@ A pretty small jruby swing app to put a UI on the Dream Cheeky Thunder USB Missi
 
 ## GUI Usage
 
+The UI also responds to the arrow keys for movement as well as the `ENTER` key to fire the missile.
+
 ```
 jruby app.rb
 ```
