@@ -39,14 +39,6 @@ class App
 
   def initialize
     @launcher = Launcher.connect
-    @buttons = {
-      up:     JButton.new('up'),
-      down:   JButton.new('down'),
-      left:   JButton.new('left'),
-      right:  JButton.new('right'),
-      fire:   JButton.new('fire!')
-    }
-
     setup_ui
   end
 
@@ -96,10 +88,10 @@ private
     # Build directional pad group layout
     direction_pad = Swing::LEL.new(JPanel, direction_pad_layout) do |c, i|
       # Inject our buttons into the layout
-      c.up    = @buttons[:up]
-      c.down  = @buttons[:down]
-      c.left  = @buttons[:left]
-      c.right = @buttons[:right]
+      c.up    = JButton.new('Up')
+      c.down  = JButton.new('Down')
+      c.left  = JButton.new('Left')
+      c.right = JButton.new('Right')
 
       # Inject our button actions
       # TODO: hook these into existing MoveAction
@@ -112,7 +104,7 @@ private
     # Build main layout
     main_ui = Swing::LEL.new(JFrame, app_layout) do |c, i|
       c.direction_pad = direction_pad
-      c.fire_button = @buttons[:fire]
+      c.fire_button = JButton.new('Fire!')
 
       i.fire_button = {action: proc{ fire } }
     end.build(args: 'Fire Ze Missiles!!')
