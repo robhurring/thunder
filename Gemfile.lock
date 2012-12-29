@@ -1,0 +1,14 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    ffi (1.2.0-java)
+    libusb (0.2.2)
+      ffi (>= 1.0)
+    profligacy (1.0-java)
+
+PLATFORMS
+  java
+
+DEPENDENCIES
+  libusb
+  profligacy
