@@ -4,6 +4,13 @@ A pretty small jruby swing app to put a UI on the Dream Cheeky Thunder USB Missi
 
 ![UI](https://raw.github.com/robhurring/thunder/master/doc/images/ui.png)
 
+## Requirements
+
+* JRuby
+* libusb
+
+To run, clone the repo and run `bundle install` to get the dependencies.
+
 ## GUI Usage
 
 The UI also responds to the arrow keys for movement as well as the `ENTER` key to fire the missile.
