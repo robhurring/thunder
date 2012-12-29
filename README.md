@@ -2,7 +2,7 @@
 
 A pretty small jruby swing app to put a UI on the Dream Cheeky Thunder USB Missile Launcher (Since their drivers are windows only -- and 50MB+!)
 
-![UI](https://github.com/robhurring/thunder/tree/master/doc/images/ui.png)
+![UI](https://raw.github.com/robhurring/thunder/master/doc/images/ui.png)
 
 ## GUI Usage
 
